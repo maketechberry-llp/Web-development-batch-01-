@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Error Handling in JavaScript</title>
+    </head>
+    <body>
+        <h2>Error Handling in JavaScript</h2>
+        <script type="text/javascript">
+            try{
+                let result = 10/0;
+                document.write("Result: " + result + "<br>");
+                if(!isFinite(result)){
+                    throw new Error("Division by zero is not allowed.");
+                }
+            }catch(error){
+                document.write("Error: " + error.message + "<br>");
+            }finally{
+                document.write("Execution completed.<br>");
+            }
+        </script>
+    </body>
+</html>

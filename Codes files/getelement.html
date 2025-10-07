@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accessing Elements</title>
+    </head>
+    <body>
+        <h2 id="header">Accessing Elements</h2>
+        <script type="text/javascript">
+            let element = document.getElementById("header");
+            document.write("Element ID: " + element.id + "<br>");
+            document.write("Element Tag Name: " + element.tagName + "<br>");
+            document.write("Element Inner Text: " + element.innerText + "<br>");
+
+            document.getElementById("header").innerText = "New Header Text";
+            document.getElementById("header").style.color="red";
+        
+        </script>
+    </body>
+</html>

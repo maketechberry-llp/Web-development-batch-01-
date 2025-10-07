@@ -1,0 +1,38 @@
+<!-- Question:
+Create a JavaScript object called student with the following:
+
+Properties: name, age, grade
+
+A function called displayInfo() that prints the student's details in this format:
+
+Name: John
+Age: 20
+Grade: A
+
+
+Task:
+
+Create the object with any sample values.
+
+Call the displayInfo() function to show the output. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Object Example</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let student = {
+            Name: "John",
+            Age: 20,
+            Grade: "A",
+        }
+        function displayInfo(){
+            for(let key in student){
+                document.write(key + ": " + student[key] + "<br>");
+            }
+        }
+        displayInfo();
+    </script>
+</body>
+</html>

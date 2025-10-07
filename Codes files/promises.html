@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Promises in JavaScript</title>
+    </head>
+    <body>
+        <h2>Understanding Promises</h2>
+        <script type="text/javascript">
+            let promise = new Promise(function(resolve, reject){
+                let fetchSucess = false;
+                if(fetchSucess){
+                    resolve("Fetching data was successful!");
+                }else{
+                    reject("Fetching data failed.");
+                }
+            });
+
+
+            promise
+            .then(function(sucessmessage){
+                document.write(sucessmessage + "<br>");
+            })
+            .catch(function(errorMessage){
+                document.write(errorMessage + "<br>");
+            });
+        </script>
+    </body>
+</html>
